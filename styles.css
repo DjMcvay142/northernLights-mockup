@@ -3,8 +3,26 @@
   padding: 0;
 }
 
+span {
+  background: linear-gradient(45deg, #34e89e, #0f3443);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 body {
   font-family: Montserrat;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+header {
+  background: #111111;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #0a0a0a;
+  padding: 1rem 0;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -12,7 +30,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .nav-logo {
@@ -22,9 +42,15 @@ body {
   align-items: center;
 }
 
+.nav-logo h1 {
+  font-family: Orbitron, monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 .nav-logo i {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .nav-links ul {
@@ -32,5 +58,76 @@ body {
   flex-direction: row;
   gap: 2rem;
   list-style: none;
+}
+
+.nav-links a {
+  color: #cccccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(45deg, #34e89e, #0f3443);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-color: rgba(252, 0, 255, 0.1);
+}
+
+.hero-section {
+  padding: 6rem 0 4rem 0;
+  text-align: center;
+  position: relative;
+  min-height: 90vh;
+  background-color: #111111;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.animation {
+  flex: 0 0 350px;
   padding: 1rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: Orbitron, monospace;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.hero-section p {
+  font-size: 1.4rem;
+  color: #aaaaaa;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
