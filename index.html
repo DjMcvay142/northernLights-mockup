@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/northernLights-mockup/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -78,7 +78,7 @@
                     fill: #f9b03c;
                   }
                   .st3 {
-                    fill: #e3e3e3;
+                    fill: red;
                   }
                   .st4 {
                     fill: #333333;
@@ -422,8 +422,96 @@
           </div>
         </div>
       </section>
+      <section class="best-sellers">
+        <div class="container">
+          <div class="section-header">
+            <h2>Best <span>Sellers</span></h2>
+            <p class="section-description">
+              Discover our most popular pieces that are launching customers into
+              orbit
+            </p>
+          </div>
+          <div class="slideshow-container">
+            <button class="slide-btn prev-btn" onclick="changeSlide(-1)">
+              ❮
+            </button>
+            <div class="product-slider">
+              <div class="product-track" id="productTrack">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="/northernLights-mockup/images/tiedyepurp.jpg"
+                      alt="Product 1"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Chongz Tie Die 35cm Glass Bong - Purple</h3>
+                    <p class="price">£35.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="/northernLights-mockup/images/rawpapers.jpg"
+                      alt="Product 2"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>RAW Connoisseur King Size Slim Papers</h3>
+                    <p class="price">£1.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="/northernLights-mockup/images/chongz-deepdish.jpg"
+                      alt="Product 3"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Chongz "Deep Dish" 60mm 4 Part Metal Grinder</h3>
+                    <p class="price">£12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="/northernLights-mockup/images/trippyshroom.jpg"
+                      alt="Product 4"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Hemper Glass Bong - Trippy Shroom</h3>
+                    <p class="price">£34.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="/northernLights-mockup/images/tiedyepurp.jpg"
+                      alt="Product 5"
+                    />
+                  </div>
+                  <div class="product-info">
+                    <h3>Fifth Product Name</h3>
+                    <p class="price">£44.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slide-btn next-btn" onclick="changeSlide(1)">
+              ❯
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-    <script src="/index.js"></script>
+    <script src="/northernLights-mockup/index.js"></script>
   </body>
 </html>
